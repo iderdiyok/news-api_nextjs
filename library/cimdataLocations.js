@@ -76,6 +76,20 @@ const cimdataLocations = [
       lng: 12.37234,
     },
   },
+  {
+    title: 'München Schäufeleinstraße 1',
+    latLng: {
+      lat: 48.14169248218668,
+      lng: 11.51810288289508,
+    },
+  },
+  {
+    title: 'Mannheim',
+    latLng: {
+      lat: 49.49332949467939,
+      lng: 8.466367895928938,
+    },
+  },
 ];
 
 export default cimdataLocations;

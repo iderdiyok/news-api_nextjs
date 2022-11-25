@@ -20,7 +20,7 @@ export default function ShuffleText() {
 
   useEffect(() => {
     if (debouncedText.length > 2) {
-      fetch(`/api/shuffletext?text=${debouncedText}`)
+      fetch(`${window.location.origin}/api/shuffletext?text=${debouncedText}`)
         .then((response) => response.json())
         .then((data) => SetOutput(data.suffledText))
         .catch((error) => console.log({ error }));
