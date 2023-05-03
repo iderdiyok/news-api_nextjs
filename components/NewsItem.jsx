@@ -9,7 +9,7 @@ export default function NewsItem({
   index,
 }) {
   const [showText, setShowText] = useState(false);
-
+  const noImageAvailable = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANo_Image_Available.jpg&psig=AOvVaw0OcVYIBwy7n5mExRcrOg52&ust=1683211045322000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNiOvfWv2f4CFQAAAAAdAAAAABAG"
   return (
     <motion.article
       className="news-item"
@@ -32,7 +32,7 @@ export default function NewsItem({
       </button>
       {showText && (
         <div className="news-item__content">
-          <img className="news-item__image" src={urlToImage} alt={title} />
+          <img className="news-item__image" src={urlToImage ? urlToImage : noImageAvailable} alt={title} />
           <p className="news-item__description">{description}</p>
           <span>{new Date(publishedAt).toLocaleString()}</span>
         </div>
