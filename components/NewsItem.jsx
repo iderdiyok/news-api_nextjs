@@ -32,7 +32,13 @@ export default function NewsItem({
       </button>
       {showText && (
         <div className="news-item__content">
-          <img className="news-item__image" src={urlToImage ? urlToImage : noImageAvailable} alt={title} />
+          <Image
+            className="news-item__image"
+            alt={title}
+            src={urlToImage ? urlToImage : noImageAvailable}
+            sizes="(max-width: 52rem) 90vw, 48rem"
+            placeholder="blur"
+          />
           <p className="news-item__description">{description}</p>
           <span>{new Date(publishedAt).toLocaleString()}</span>
         </div>
