@@ -9,7 +9,7 @@ export default function NewsItem({
   index,
 }) {
   const [showText, setShowText] = useState(false);
-  const noImageAvailable = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANo_Image_Available.jpg&psig=AOvVaw0OcVYIBwy7n5mExRcrOg52&ust=1683211045322000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNiOvfWv2f4CFQAAAAAdAAAAABAG"
+  const noImageAvailable = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
   return (
     <motion.article
       className="news-item"
